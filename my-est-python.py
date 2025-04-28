@@ -9,37 +9,17 @@ from getpass import getpass
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 #változók
-username = "admin"
-password = "vpn123"
-file_path = "/Users/dvirga/Documents/MUNKA/SAJÁT/_blog/EST/switch_ips.xlsx"
+username = "<felhasznalonev>"
+password = "<jelszo>"
+file_path = "<excel_file_helye>"
 ip_coloumn = "IP address"
-est_url = "https://clearpass.vegablogja.com/.well-known/est/ca:15"
-est_username = "estenroll@vegablogja.com"
-est_password = "vpn123"
+est_url = "<est_url>"
+est_username = "<est_onboard_user>"
+est_password = "<est_onboard_jelszo>"
 est_enroll_prof_name = "est-enroll-prof"
 est_cert_name = "est-cert"
 est_root_cert_name = "est-root"
-est_root_cert = """-----BEGIN CERTIFICATE-----
-MIIDgTCCAmmgAwIBAgIQYMYSB077CZlHChfOaw3FeDANBgkqhkiG9w0BAQsFADBT
-MRcwFQYKCZImiZPyLGQBGRYHbmV0d29yazEVMBMGCgmSJomT8ixkARkWBWFydWJh
-MSEwHwYDVQQDExhhcnViYS1ORVRXT1JLLVRFU1QtV1MtQ0EwHhcNMjQwMjIzMTMz
-MzIyWhcNMjkwMjIzMTM0MzIyWjBTMRcwFQYKCZImiZPyLGQBGRYHbmV0d29yazEV
-MBMGCgmSJomT8ixkARkWBWFydWJhMSEwHwYDVQQDExhhcnViYS1ORVRXT1JLLVRF
-U1QtV1MtQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8ovCAS8Jk
-046Wk0YZ0lIbiw1THShjj+H9RjzntfLaWMomf2v4viMdOY6Qqx2A58s85GxhwwRJ
-JXUgnL2RdAEilXtaOdlTAquXB3Ou2TkdlekmjDmzvFd6InU6B6QH3ZyLQ5aYldHn
-i9kJatVpJomunwMgiE0F0cok4aUeeYMXpmQQeXtSJSTfVMzefr1ka+zMM0zljjix
-FU99hUWmxJcsndmIedNyzbLVBj+O2ebFPFNwuoxM6Xw0FsCWDaYRWnbeudLYaSR4
-cON28r83CfkU/V2i+PRqsdTpYal4Y6r3fwBPEcAceaUdjB/lTt+wKnCBCLigODix
-HbT2cD5otLghAgMBAAGjUTBPMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/
-MB0GA1UdDgQWBBQ/BMesZ5atHtN0d4Kg9dNOxjdAgTAQBgkrBgEEAYI3FQEEAwIB
-ADANBgkqhkiG9w0BAQsFAAOCAQEAJgdX/A3mktwal05r1BGKf8zqzO9xqS7VbqQo
-CP3NQRFomDfoeCoSN/BuBWw17ROv7SoZwDr4y0kGVtvcmWj/mxcAtmXAFp/TfAuP
-4YqVdijmNQmukAQcJLpBZqMCdsqtSyHHSWBEZ7cq6lQQp+jIgEPtRvxNS/CBGiwO
-v12Zqh9dTevyktHjJkdUd7+SwBtTGqXSSV5CxWBG5tw1KsriHlc0qarIdUiYjSWB
-h+/WZPHMHxwNwj07xHHvqhCHU0oq9HzLRLIkL74hyg10ppAUUhmCYuSw8B5Yz4al
-j6w7AEg7Vb1HjzdTblP7oIulrE8jMIyJxQIClrVsTJt1oeIVGA==
------END CERTIFICATE-----"""
+est_root_cert = """<root_ca_base_64_ben>"""
 
 #rest api session létrehozása
 session_api = requests.session()
